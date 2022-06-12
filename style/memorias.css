@@ -1,0 +1,124 @@
+/*regras*/
+
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Fontes*/
+
+@font-face {
+  font-family: 'butler'; 
+  src: url('../font/butler/Butler_Light.otf') 
+   format('opentype');
+}
+
+@font-face {
+  font-family: 'brother_side'; 
+  src: url('../font/brotherside/brotherside_signature.otf') 
+   format('opentype');
+}
+
+:root{
+  /*Fontes*/
+  --fontTitulo: brother_side,cursive;
+  --fontTexto: butler,Serif;
+  /*Cores*/
+  --salmonPink: #FF8FA3;
+  --fieryRose: #FF486D;
+  --claret: #800F2F;
+  /*Cores De Apoio*/
+  --pink: #FFCCD5;
+  --brightMaroon: #C9184A;
+}
+
+/*partes*/
+
+body{
+  background-color: white;
+}
+
+/*textos e titulos*/
+
+h1{
+  font: normal 50px var(--fontTitulo);
+  color: var(--fieryRose);
+  text-align: center;
+  padding: 15px;
+  margin: 200px auto 25px auto;
+}
+
+.title{
+  font: normal 35px var(--fontTitulo);
+  color: var(--fieryRose);
+  text-align: center;
+  padding: 15px;
+  margin: 25px auto 25px auto;
+}
+
+p{
+  font: normal 22px var(--fontTexto);
+  color: black;
+  text-align: center;
+  margin: auto auto 790px auto;
+  padding: 25px;
+}
+
+
+.lestp{
+  font: normal 22px var(--fontTexto);
+  color: black;
+  text-align: center;
+  margin: 700px auto 140px auto;
+  padding: 25px;
+}
+
+.text{
+  font: normal 20px var(--fontTexto);
+  color: black;
+  text-align: center;
+  margin: 30px auto auto auto;
+  padding: 15px;
+  
+}
+
+/*Links*/
+
+a{
+font: normal 35px var(--fontTitulo);
+color: var(--fieryRose);
+text-align: center;
+text-decoration: none;
+display: block;
+margin: auto auto 200px auto;
+padding: 25px;
+}
+
+/*Imagens*/
+
+img{
+  width: 380px;
+  height: 280px;
+  display: block;
+  margin: auto;
+  border: 2px solid var(--fieryRose);
+}
+
+/*efeitos*/
+
+strong{
+  font: normal 25px var(--fontTitulo);
+  color: var(--fieryRose);
+}
+
+hr{
+  width: 250px;
+  color: red;
+  margin: 12px auto 12px auto;
+}
+
+.lest{
+  margin: 20px auto 250px auto;
+}

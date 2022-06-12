@@ -1,0 +1,95 @@
+/*regras*/
+
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Fontes*/
+
+@font-face {
+  font-family: 'butler'; 
+  src: url('../font/butler/Butler_Light.otf') 
+   format('opentype');
+}
+
+@font-face {
+  font-family: 'brother_side'; 
+  src: url('../font/brotherside/brotherside_signature.otf') 
+   format('opentype');
+}
+
+:root{
+  /*Fontes*/
+  --fontTitulo: brother_side,cursive;
+  --fontTexto: butler,Serif;
+  /*Cores*/
+  --Ruby: #E80033;
+  --vividRed: #FF0033;
+  --shadow: #4F0033;
+}
+
+/*partes*/
+
+body{
+  background-color: var(--shadow);
+}
+
+/*Titulos e Texto*/
+
+h1{
+  font: normal 45px var(--fontTitulo);
+  padding: 12px;
+  color: var(--Ruby);
+  margin: 10px auto 120px auto;
+  text-align: center;
+}
+
+h2{
+  font: normal 36px var(--fontTitulo);
+  padding: 12px;
+  color: var(--Ruby);
+  margin: 15px auto 35px auto;
+  text-align: center;
+}
+
+p{
+  font: normal 21px var(--fontTexto);
+  padding: 12px;
+  color: white;
+  margin: 10px auto 30px auto;
+  text-align: center;
+}
+
+.ruby {
+  color: var(--Ruby);
+  font-family: var(--fontTitulo);
+  font-size: 25px;
+  padding: 12px;
+}
+
+/*links*/
+
+a{
+  text-decoration: none;
+  font: normal 25px var(--fontTitulo);
+  color: var(--vividRed);
+}
+
+/*Imagens*/
+
+img{
+  width: 270px;
+  height: 200px;
+  display: block;
+  margin: 100px auto 80px auto;
+}
+
+/*Efeito*/
+
+em{
+  font: normal 25px var(--fontTitulo);
+  color: var(--Ruby);
+}

@@ -1,0 +1,75 @@
+/*regras*/
+
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Fontes*/
+
+@font-face {
+  font-family: 'butler'; 
+  src: url('../font/butler.otf') 
+   format('opentype');
+}
+
+@font-face {
+  font-family: 'brother_side'; 
+  src: url('../font/brotherside.otf') 
+   format('opentype');
+}
+
+:root{
+  /*Fontes*/
+  --fontTitulo: brother_side,cursive;
+  --fontTexto: butler,Serif;
+  /*Cores*/
+  --salmonPink: #FF8FA3;
+  --fieryRose: #FF486D;
+  --claret: #800F2F;
+  /*Cores De Apoio*/
+  --pink: #FFCCD5;
+  --brightMaroon: #C9184A;
+}
+
+/*partes*/
+
+body{
+  background-color: var(--pink);
+}
+
+div{
+  padding: 30px;
+  margin: 300px auto auto auto;
+  background-color: var(--fieryRose);
+}
+
+/*Textos e Titulos*/
+
+h1{
+  font: normal 35px monospace;
+  color: white;
+  margin-bottom: 10px
+  text-align: center;
+  padding: 20px;
+}
+
+p{
+  font: normal 18px Sans-serif;
+  color: white;
+  margin-bottom: 5px;
+  padding: 15px;
+}
+
+a{
+  font: normal 25px var(--fontTitulo);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover{
+  color: var(--claret);
+}

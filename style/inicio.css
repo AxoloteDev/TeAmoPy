@@ -1,0 +1,259 @@
+/*regras*/
+
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Fontes*/
+
+@font-face {
+  font-family: 'butler'; 
+  src: url('../font/butler/Butler_Light.otf') 
+   format('opentype');
+}
+
+@font-face {
+  font-family: 'brother_side'; 
+  src: url('../font/brotherside/brotherside_signature.otf') 
+   format('opentype');
+}
+
+@font-face {
+  font-family: 'selectric_script'; 
+  src: url('../fonts/selectricscript.ttf') 
+   format('truetype');
+}
+
+@font-face {
+  font-family: 'type_writer'; 
+  src: url('../fonts/typewriter.ttf') 
+   format('truetype');
+}
+
+:root{
+  /*Fontes*/
+  --fontTitulo: brother_side,cursive;
+  --fontTexto: butler,Serif;
+  --fonteTexto2: type_writer, serif;
+  --fonteTitulo2: selectric_script, cursive;
+  /*Cores*/
+  --salmonPink: #FF8FA3;
+  --fieryRose: #FF486D;
+  --claret: #800F2F;
+  /*Cores De Apoio*/
+  --pink: #FFCCD5;
+  --brightMaroon: #C9184A;
+}
+
+/*Partez*/
+
+body{
+  background-color: var(--pink);
+}
+
+.div1{
+  padding: 30px;
+}
+
+.div2{
+  padding: 30px;
+  background-image: linear-gradient(to top, white,  var(--pink));
+}
+
+.div3{
+  padding: 30px;
+  background-image: linear-gradient(to top, var(--claret),  white);
+}
+
+.diva{
+  padding: 30px;
+  background-color: var(--claret);
+}
+
+.preto{
+  padding: 30px;
+  background-color: black;
+}
+
+.div4{
+  padding: 30px;
+  background-image: linear-gradient(to top, black, black);
+}
+
+/*texto e titulo*/
+
+.div1 > h1{
+  font: normal 50px var(--fontTitulo);
+  color: var(--fieryRose);
+  text-align: center;
+  padding: 15px;
+}
+
+#title1{
+  margin-bottom: 500px;
+}
+
+.div2 > h1{
+  font: normal 50px var(--fontTitulo);
+  color: var(--fieryRose);
+  text-align: center;
+  margin: 250px auto 700px auto;
+  padding: 15px;
+}
+
+.div4 > h1{
+  font: normal 50px var(--fontTitulo);
+  color: white;
+  text-align: center;
+  margin: 250px auto 300px auto;
+  padding: 15px;
+}
+
+.lesth{
+  margin: 500px auto 550px;
+  font-size: 30px;
+}
+
+
+.div1 > p{
+  font: normal 22px var(--fontTexto);
+  color: white;
+  text-align: center;
+  margin: 100px auto 450px auto;
+  padding: 25px;
+}
+
+.diva > p{
+  font: normal 23px var(--fontTitulo);
+  color: white;
+  padding: 12px;
+  margin: 385px auto 0px 10px;
+}
+
+.preto > h1{
+  font: normal 30px var(--fonteTitulo2);
+  color: white;
+  padding: 20px;
+  margin: 80px auto 60px auto;
+  text-align: center;
+}
+
+.preto > p{
+  font: normal 23px var(--fonteTexto2);
+  color: white;
+  padding: 15px;
+  margin: 10px auto 20px auto;
+  text-align: center;
+}
+
+.text{
+  font: normal 22px var(--fontTexto);
+  color: white;
+  text-align: center;
+  text-indent: 13px;
+  padding: 25px;
+  border: 2px solid rgba(255, 143, 163, 0.3);
+  border-radius: 15px;
+  box-shadow: 7px 7px rgba(255, 143, 163, 0.3);
+}
+
+.text2{
+  font: normal 22px var(--fontTexto);
+  color: black;
+  text-align: center;
+  text-indent: 13px;
+  padding: 25px;
+  border: 2px solid rgba(255, 72, 109, 0.6);
+  border-radius: 15px;
+  box-shadow: 7px 7px rgba(255, 72, 109, 0.4);
+}
+
+.text3{
+  font: normal 22px var(--fontTexto);
+  color: white;
+  text-align: center;
+  text-indent: 13px;
+  padding: 25px;
+  margin: 600px auto 450px auto;
+  border: 2px solid rgba(255, 204, 213, 0.6);
+  border-radius: 15px;
+  box-shadow: 7px 7px rgba(255, 204, 213, 0.4);
+}
+
+/*links*/
+
+a{
+  font: normal 35px var(--fontTitulo);
+  color: var(--fieryRose);
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 25px auto auto auto;
+  padding: 20px;
+}
+
+.diva > a{
+  font: normal 20px var(--fontTexto);
+  color: var(--fieryRose);
+  padding: 10px;
+  display: block;
+  margin: 1px auto 350px 10px;
+}
+
+.diva > a:hover{
+  color: white;
+}
+
+a:hover{
+  color: var(--claret);
+}
+
+.div2 > p > a{
+  color: #EA003F;
+}
+
+.preto > a{
+  font: normal 30px var(--fonteTitulo2);
+  color: white;
+  padding: 20px;
+  display: block;
+  margin: 15px auto 100px auto;
+  text-align: center;
+}
+
+.div4 > a{
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  margin: 10px auto 150px auto;
+}
+
+/*Imagens*/
+
+.div1 > img{
+  margin: 100px auto 100px auto;
+  display: block;
+}
+
+.div2 > img{
+  margin: 100px auto 510px auto;
+  display: block;
+  border: 3px solid var(--fieryRose);
+  width: 400px;
+  height: 320px;
+}
+
+/*efeitos*/
+
+strong{
+  font: normal 30px var(--fontTitulo);
+  color: var(--fieryRose);
+}
+
+.div3 > strong{
+  font: normal 30px var(--fontTitulo);
+  color: var(--Pink);
+}

@@ -1,0 +1,101 @@
+/*regras*/
+
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Fontes*/
+
+@font-face {
+  font-family: 'butler'; 
+  src: url('../font/butler/Butler_Light.otf') 
+   format('opentype');
+}
+
+@font-face {
+  font-family: 'brother_side'; 
+  src: url('../font/brotherside/brotherside_signature.otf') 
+   format('opentype');
+}
+
+:root{
+  /*Fontes*/
+  --fontTitulo: brother_side,cursive;
+  --fontTexto: butler,Serif;
+  /*Cores*/
+  --salmonPink: #FF8FA3;
+  --fieryRose: #FF486D;
+  --claret: #800F2F;
+  /*Cores De Apoio*/
+  --pink: #FFCCD5;
+  --brightMaroon: #C9184A;
+}
+
+/*Partes*/
+
+body{
+  background-image: linear-gradient(to top, var(--salmonPink),  var(--pink));
+}
+
+.universe{
+  background-image: url("../images/universe.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+/*titulo e textos*/
+
+h1{
+  font: normal 48px var(--fontTexto);
+  color: white;
+  margin: 65px auto 150px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.h1{
+  font-size: 42px;
+}
+
+p{
+  font: normal 24px var(--fontTitulo);
+  color: white;
+  text-align: center;
+  margin: auto 35px auto 35px;
+  text-indent: 20px;
+  padding: 15px;
+  border: 1px solid rgba(255, 72, 109, 0.6);
+  border-radius: 15px;
+  box-shadow: 7px 7px rgba(255, 72, 109, 0.4);
+}
+
+.p{
+  border: 1px solid rgba(93, 14, 225, 0.6);
+  border-radius: 15px;
+  box-shadow: 7px 7px rgba(93, 14, 225, 0.6);
+}
+
+/*link*/
+
+a{
+  text-decoration: none;
+  color: var(--claret);
+}
+
+.a{
+  color: #5D0EE1;
+}
+
+/*wfeitos*/
+
+em{
+  color: var(--fieryRose);
+}
+
+strong{
+  color: #5D0EE1;
+}

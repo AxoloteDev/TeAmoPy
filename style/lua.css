@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Fontes*/
+
+@font-face {
+  font-family: 'brother_side'; 
+   src: url('../fonts/brotherside.otf') 
+   format('opentype');
+}
+
+:root{
+  /*Fontes*/
+  --fontTexto: brother_side,cursive;
+}
+
+/*Partes*/
+
+body{
+  background-image: url('../images/lua.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+/*tutulos e texto*/
+
+h1{
+  font: normal 45px var(--fontTexto);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin: 25px auto 75px auto;
+}
+
+p{
+  font: normal 35px var(--fontTexto);
+  text-align: center;
+  text-indent: 10px;
+  color: white;
+  padding: 20px;
+  margin: 15px auto 35px auto;
+}
+
+a{
+  text-decoration: none;
+  display: block;
+  margin: auto auto 50px auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+}

@@ -1,0 +1,61 @@
+/*regras*/
+
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Fontes*/
+
+@font-face {
+  font-family: 'selectric_script'; 
+  src: url('../fonts/selectricscript.ttf') 
+   format('truetype');
+}
+
+@font-face {
+  font-family: 'type_writer'; 
+  src: url('../fonts/typewriter.ttf') 
+   format('truetype');
+}
+
+:root{
+  /*Fontes*/
+  --fonteTexto: type_writer, serif;
+  --fonteTitulo: selectric_script, cursive;
+}
+
+/*Partes*/
+
+body{
+  background-color: black;
+}
+
+/*Fontes w Titulo*/
+
+h1{
+  font: normal 30px var(--fonteTitulo);
+  color: white;
+  text-align: center;
+  margin: 40px auto 80px auto;
+  padding: 20px;
+}
+
+p{
+  font: normal 20px var(--fonteTexto);
+  color: white;
+  text-align: center;
+  margin: 10px auto 85px auto;
+  padding: 20px;
+}
+
+/*Imagens*/
+
+img{
+  width: 94px;
+  height: 313px;
+  display: block;
+  margin: auto auto 100px auto;
+}
